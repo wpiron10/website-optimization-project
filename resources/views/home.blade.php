@@ -6,13 +6,12 @@
 
 @section('content')
 <section class="hero_section">
-    <img src="" alt="" class="hero_img" />
     <div class="hero_content">
-        <p>100% Natural Food</p>
-        <h1>Choose the best
+        <p class="hero_content_text">100% Natural Food</p>
+        <h1 class="hero_content_heading">Choose the best
             healthier way
             of life</h1>
-        <button>Explore Now</button>
+
     </div>
 </section>
 @endsection
