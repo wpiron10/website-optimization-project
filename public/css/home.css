@@ -1,0 +1,1 @@
+.hero_section{width:100%;height:100vh;border:4px red solid;display:flex;justify-content:flex-start;align-items:center}.hero_section .hero_content{width:530px;flex-wrap:wrap;height:303px;border:4px green solid;justify-content:flex-start;align-items:center}.hero_section .hero_content .hero_img{border:4px blue solid}
