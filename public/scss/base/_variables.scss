@@ -1,13 +1,13 @@
 :root {
-    --color-primary: #274C5B;
-    --color-secondary: #7EB693;
-    --color-tertiary: #EFD372;
+    --color-primary: #274c5b;
+    --color-secondary: #7eb693;
+    --color-tertiary: #efd372;
 
-    --color-white: #F5F5F5;
-    --color-grey: #D4D4D4;
-    --color-grey-light: #F9F8F8;
-    --color-black: #525C60;
-    --color-green-light: #EFF6F1;
+    --color-white: #f5f5f5;
+    --color-grey: #d4d4d4;
+    --color-grey-light: #f9f8f8;
+    --color-black: #525c60;
+    --color-green-light: #eff6f1;
 
     --font-family-primary: Roboto, sans-serif;
     --font-family-secondary: OpenSans, serif;
@@ -22,4 +22,15 @@
     --font-size-content: 18px;
     --font-size-button: 20px;
     --font-size-quotes: 20px;
+
+    --spacing-4xs: 2px;
+    --spacing-2xs: 4px;
+    --spacing-xs: 8px;
+    --spacing-s: 16px;
+    --spacing-m: 24px;
+    --spacing-l: 32px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 48px;
+    --spacing-2xl: 54px;
+    --spacing-4xl: 108px;
 }
