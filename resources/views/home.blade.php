@@ -36,7 +36,7 @@
             @foreach ($products as $product)
                 <div class="products_content_card">
                     <div class="products_content_card_image">
-                        <img src="{{asset('assets/images/'.$product['image'])}}" alt="{{$product['name']}}">
+                        <img src="{{asset('assets/images/'.$product['image'])}}" alt="{{$product['name']}}" loading="lazy" width="250">
                     </div>
                     <span class="products_content_card_tags">
                         @php
@@ -110,7 +110,7 @@
                 </div>
                 <div class="news_content_card_infos">
                     <div class="news_content_card_infos_author">
-                        <img src="{{asset('assets/icons/profil.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/profil.svg')}}" alt="" loading="lazy" width="18">
                         <span>By Rachi Card</span>
                     </div>
                     <h6>The Benefits of Vitamin D & How to Get It</h6>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="news_content_card_infos">
                     <div class="news_content_card_infos_author">
-                        <img src="{{asset('assets/icons/profil.svg')}}" alt="">
+                        <img src="{{asset('assets/icons/profil.svg')}}" alt="" loading="lazy" width="18">
                         <span>By Rachi Card</span>
                     </div>
                     <h6>Our Favourite Summertime Tommeto</h6>
