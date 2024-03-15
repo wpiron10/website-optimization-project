@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Calabrese Broccoli",
+        "price": 20.00,
+        "promo": 13.00,
+        "image": "broccoli.webp",
+        "tags": [
+            "Vegetable"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Fresh Banana Fruites",
+        "price": 20.00,
+        "promo": 14.00,
+        "image": "banana.webp",
+        "tags": [
+            "Fresh"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "White Nuts",
+        "price": 20.00,
+        "promo": 15.00,
+        "image": "white-nuts.webp",
+        "tags": [
+            "Millets"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Vegan Red Tomato",
+        "price": 20.00,
+        "promo": 17.00,
+        "image": "tomato.webp",
+        "tags": [
+            "Vegetable"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Mung Bean",
+        "price": 20.00,
+        "promo": 11.00,
+        "image": "mung-beans.webp",
+        "tags": [
+            "Health"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Brown Hazelnut",
+        "price": 20.00,
+        "promo": 12.00,
+        "image": "hazelnut.webp",
+        "tags": [
+            "Nuts"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Eggs",
+        "price": 20.00,
+        "promo": 17.00,
+        "image": "eggs.webp",
+        "tags": [
+            "Fresh"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Zelco Suji Elaichi Rusk",
+        "price": 20.00,
+        "promo": 15.00,
+        "image": "zelco-suji-elaichi-rusk.webp",
+        "tags": [
+            "Fresh"
+        ]
+    }
+]
