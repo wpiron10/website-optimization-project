@@ -5,12 +5,10 @@
 @endsection
 
 @section('content')
-<section class="hero_section">
+<section class="hero">
     <div class="hero_wrapper">
-        <p class="hero_content_text">100% Natural Food</p>
-        <h1 class="hero_content_heading">Choose the best
-            healthier way
-            of life</h1>
+        <p class="title_info">100% Natural Food</p>
+        <h1 class="hero_heading">Choose the best healthier way of life</h1>
         <x-button color="tertiary" arrow="true" text="Explore Now" />
     </div>
 </section>

@@ -1,0 +1,105 @@
+@use "./base/placeholders" as *;
+
+.header {
+    &_wrapper {
+        display: flex;
+        // row-gap: var(--spacing-4xl);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-xs);
+        font-family: var(--font-family-primary);
+        font-size: var(--font-size-h5);
+        color: var(--color-primary);
+        text-decoration: none;
+
+        img {
+            width: var(--font-size-h5);
+        }
+    }
+
+    &_nav_list {
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-m);
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            font-size: var(--font-family-primary);
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+    }
+
+    &_tools {
+        display: flex;
+        align-items: center;
+        column-gap: var(--spacing-m);
+
+        &_searchbar {
+            position: relative;
+
+            input {
+                @extend %borderRound;
+                background: var(--color-grey-light);
+                border: none;
+                overflow: none;
+                padding: 10px var(--spacing-xxl) 10px var(--spacing-xs);
+            }
+
+            button {
+                background: var(--color-secondary);
+                @extend%borderRoundTotal;
+                padding: 10px;
+                border: none;
+                overflow: none;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                right: 4px;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+
+                img {
+                    width: 16px;
+                }
+            }
+        }
+
+        &_cart {
+            display: flex;
+            align-items: center;
+            column-gap: var(--spacing-xs);
+            @extend %borderRound;
+            padding: var(--spacing-xs);
+            cursor: pointer;
+            border: 1px solid var(--color-grey);
+            background: transparent;
+            flex-shrink: 0;
+
+            &_image {
+                background: var(--color-primary);
+                @extend%borderRoundTotal;
+                padding: 10px;
+
+                img {
+                    width: 16px;
+                }
+            }
+
+            span {
+                font-size: var(--font-family-primary);
+                font-weight: bold;
+                color: var(--color-primary);
+            }
+        }
+    }
+}
