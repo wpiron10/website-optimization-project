@@ -1,6 +1,27 @@
 @use "./base/placeholders" as *;
 
-.hero {
+.hero_section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/icons/hero-banner.svg"),
+        url("../assets/images/hero-banner.webp");
+    .hero_wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--spacing-s);
+        flex-wrap: wrap;
+        flex-direction: column;
+        .hero_content_text {
+            font-family: var(--font-family-tertiary);
+        }
+        .hero_content_heading {
+            width: 530px;
+        }
+    }
 }
 
 .infos {
@@ -31,9 +52,6 @@
             background-image: url("../assets/images/background-card-vegetables.webp");
         }
     }
-}
-
-.about {
 }
 
 .products {
