@@ -45,7 +45,7 @@
                 </div>
                 <div class="footer_menus_part position-center">
                     <p class="footer_menus_part_title">
-                        <img src="{{asset('assets/logo.svg')}}" alt="logo">
+                        <img src="{{asset('assets/logo.svg')}}" alt="logo" loading="lazy" width="30">
                         <span>Organick</span>
                     </p>
                     <div class="footer_menus_part_content">
@@ -55,16 +55,16 @@
                         </div>
                         <div class="footer_menus_part_content_socials position-center">
                             <a class="footer_menus_part_content_socials_image" href="#" target="_blank">
-                                <img src="{{asset('assets/icons/instagram.svg')}}" alt="instagram">
+                                <img src="{{asset('assets/icons/instagram.svg')}}" alt="instagram" loading="lazy" width="16">
                             </a>
                             <a class="footer_menus_part_content_socials_image" href="#" target="_blank">
-                                <img src="{{asset('assets/icons/facebook.svg')}}" alt="facebook">
+                                <img src="{{asset('assets/icons/facebook.svg')}}" alt="facebook" loading="lazy" width="16">
                             </a>
                             <a class="footer_menus_part_content_socials_image" href="#" target="_blank">
-                                <img src="{{asset('assets/icons/twitter.svg')}}" alt="twitter">
+                                <img src="{{asset('assets/icons/twitter.svg')}}" alt="twitter" loading="lazy" width="16">
                             </a>
                             <a class="footer_menus_part_content_socials_image" href="#" target="_blank">
-                                <img src="{{asset('assets/icons/pinterest.svg')}}" alt="pinterest">
+                                <img src="{{asset('assets/icons/pinterest.svg')}}" alt="pinterest" loading="lazy" width="16">
                             </a>
                         </div>
                     </div>
