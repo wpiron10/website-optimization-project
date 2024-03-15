@@ -17,7 +17,38 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <div class="header_wrapper">
+            <a class="header_logo" href="#" title="Home">
+                <img src="{{asset('assets/logo.svg')}}" alt="logo" loading="lazy" width="30">
+                <span>Organick</span>
+            </a>
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+            <div class="header_tools">
+                <div class="header_tools_searchbar">
+                    <input type="text">
+                    <button>
+                        <img src="{{asset('assets/icons/search.svg')}}" alt="search" width="16">
+                    </button>
+                </div>
+                <button class="header_tools_cart">
+                    <div class="header_tools_cart_image">
+                        <img src="{{asset('assets/icons/cart.svg')}}" alt="cart" width="16">
+                    </div>
+                    <span>Cart (0)</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <main>
         @yield('content')

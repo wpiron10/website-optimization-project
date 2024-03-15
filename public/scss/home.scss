@@ -1,26 +1,20 @@
 @use "./base/placeholders" as *;
 
-.hero_section {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
+.hero {
+    background-image: url("../assets/icons/hero-banner.svg"), url("../assets/images/hero-banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/icons/hero-banner.svg"),
-        url("../assets/images/hero-banner.webp");
-    .hero_wrapper {
+    height: 90vh;
+
+    &_wrapper {
         display: flex;
-        align-items: flex-start;
-        gap: var(--spacing-s);
-        flex-wrap: wrap;
         flex-direction: column;
-        .hero_content_text {
-            font-family: var(--font-family-tertiary);
-        }
-        .hero_content_heading {
-            width: 530px;
-        }
+        row-gap: var(--spacing-m);
+        flex-wrap: wrap;
+    }
+
+    &_heading {
+        width: 50%;
     }
 }
 
@@ -156,18 +150,16 @@
                         display: flex;
 
                         &_star {
-                            clip-path: polygon(
-                                50% 4%,
-                                61% 39%,
-                                98% 39%,
-                                68% 61%,
-                                79% 95%,
-                                50% 74%,
-                                21% 95%,
-                                32% 61%,
-                                2% 39%,
-                                39% 39%
-                            );
+                            clip-path: polygon(50% 4%,
+                                    61% 39%,
+                                    98% 39%,
+                                    68% 61%,
+                                    79% 95%,
+                                    50% 74%,
+                                    21% 95%,
+                                    32% 61%,
+                                    2% 39%,
+                                    39% 39%);
                             background-color: #ffa858;
                             width: 14px;
                             aspect-ratio: 1;
