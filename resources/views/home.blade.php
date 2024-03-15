@@ -27,7 +27,32 @@
 </section>
 
 <section class="about">
-    <div class="about_wrapper"></div>
+    <div class="about_wrapper">
+        <div class="about_content">
+            <p class="title_info">About Us</p>
+            <h2>We Believe in Working Accredited Farmers</h2>
+            <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            <div class="about_content_element">
+                <div class="about_content_element_img">
+                    <img src="{{asset('assets/icons/organic-foods.svg')}}" alt="" loading="lazy" width="50">
+                </div>
+                <div class="about_content_element_infos">
+                    <h6>Organic Foods Only</h6>
+                    <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="about_content_element">
+                <div class="about_content_element_img">
+                    <img src="{{asset('assets/icons/quality-standars.svg')}}" alt="" loading="lazy" width="50">
+                </div>
+                <div class="about_content_element_infos">
+                    <h6>Quality Standards</h6>
+                    <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+            </div>
+            <x-button color="primary" arrow="true" text="Shop Now" />
+        </div>
+    </div>
 </section>
 
 <section class="products">
