@@ -65,25 +65,15 @@
             @foreach ($products as $product)
             <div class="products_content_card">
                 <div class="products_content_card_image">
-                    <img src="{{asset('assets/images/'.$product['image'])}}" alt="{{$product['name']}}" loading="lazy" width="250">
+                    <img src="{{asset('storage/'.$product->image)}}" alt="{{$product->name}}" loading="lazy" width="250">
                 </div>
-                <span class="products_content_card_tags">
-                    @php
-                    $i = 0;
-                    $tags_result = '';
-                    foreach ($product['tags'] as $tag) {
-                    $i === 0 ? $tags_result = $tag : $tags_result .= ', ' . $tag;
-                    $i++;
-                    }
-                    echo $tags_result;
-                    @endphp
-                </span>
+                <span class="products_content_card_tags">{{$product->tags}}</span>
                 <div class="products_content_card_infos">
-                    <p class="products_content_card_infos_title">{{$product['name']}}</p>
+                    <p class="products_content_card_infos_title">{{$product->name}}</p>
                     <div class="products_content_card_infos_bottom">
-                        <span class="products_content_card_infos_bottom_price {{array_key_exists('promo', $product) ? 'products_content_card_infos_bottom_price--promo' : ''}}">${{number_format($product['price'], 2, ',')}}</span>
-                        @if (array_key_exists('promo', $product))
-                        <span class="products_content_card_infos_bottom_promo">${{number_format($product['promo'], 2, ',')}}</span>
+                        <span class="products_content_card_infos_bottom_price {{$product->promo ? 'products_content_card_infos_bottom_price--promo' : ''}}">${{number_format($product->price, 2, ',')}}</span>
+                        @if ($product->promo)
+                        <span class="products_content_card_infos_bottom_promo">${{number_format($product->promo, 2, ',')}}</span>
                         @endif
                         <div class="products_content_card_infos_bottom_rating">
                             <span class="products_content_card_infos_bottom_rating_star"></span>
